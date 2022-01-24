@@ -31,10 +31,12 @@
           <!-- <label for="input-texto">Digite a mensagem para ser criptografada</label> -->
           <input class="input-entrada" type="text" name="input-texto" id="input-texto"
             placeholder="insira o texto aqui">
-          <input type="button" id="msg-base64-crypto" value="Codificar Mensagem" style="display: none;"
-            onclick="encoderBase()">
-          <input type="button" id="msg-base64-decrypto" value="Decodificar Mensagem" style="display: none;"
-            onclick="decoderBase()">
+          <div>
+            <input type="button" id="msg-base64-crypto" value="Codificar Mensagem" style="display: none;"
+              onclick="encoderBase()">
+            <input type="button" id="msg-base64-decrypto" value="Decodificar Mensagem" style="display: none;"
+              onclick="decoderBase()">
+          </div>
           <div class="btn-base64">
             <input class="btn" type="radio" name="encriptobase" id="crypto-radio" onclick="selecionaradio(this)">
             <label for="btn-cripto">Codificar</label>
