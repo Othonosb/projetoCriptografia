@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(cripto3.jpg);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  flex-direction: column;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+
+.main {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  align-items: center;
+  padding: 15px;
+  width: 30vw;
+  margin: auto;
+}
+
+.texto-cripto {
+  padding: 10px;
+  margin: 100px;
+  margin-top: 50px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background: url(cripto.jpg);
+  border-radius: 0.5em;
+  width: 60vw;
+  height: 550px;
+}
+
+.mensagem-entrada {
+  padding: 10px;
+  margin: 0 10px 0 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 0.5em;
+  width: 30vw;
+  height: auto;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  
+}
+
+
+
+.btn {
+  box-sizing: border-box;
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: blue;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+  width: 100px;
+  height: 25px;
+
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  height: 50px;
+}
+
+.hero{
+  align-items: center;
+  justify-content: center;
+}
+
+ .btn-base64{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-left: 50px;
+  margin-top: 60px;
+  gap: 40px;
+} 
+
+ .button-codificador{
+ flex-direction: row;
+ justify-content: space-between;
+  gap: 30px;
+  margin-top: 50px;
+} 
+
+   /* #msg-base64-crypto{
+ 
+} */
+
+/* #msg-base64-decrypto{
+  margin-left: 50px;
+}   */
+
+#crypto-radio{
+  margin-right: 17px;
+} 
+
+input#msg-base64-crypto{
+  all: unset;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  color: black;
+  border-radius: 8px;
+  margin-left: 380px;
+  margin-top: 20px;
+}
+
+input#msg-base64-decrypto{
+  all: unset;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  color: black;
+  border-radius: 8px;
+  margin-left: 380px;
+  margin-top: 20px;
+}
+
+button#buttonCopiar{
+  all: unset;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  color: black;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+
+
+button#buttonCopiarBase64{
+  all: unset;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  color: black;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+
+#input-texto{
+  background-color: white;
+  width: 600px;
+  height: 40px;
+  color: black;
+  border-radius: 8px;
+
+}
+
+label{
+  font-size: 20px;
+  color: black;
+  background-color: white;
+}
+
+input#msg-cesar-crypto{
+  all: unset;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  color: black;
+  border-radius: 8px;
+  margin-left: 380px;
+  margin-top: 20px;
+}
+
+input#msg-cesar-decrypto{
+  all: unset;
+  background-color: white;;
+  width: 200px;
+  height: 40px;
+  color: black;
+  border-radius: 8px;
+  margin-left: 380px;
+  margin-top: 20px;
+}
+
+#entrada-name{
+  background-color: white;
+  width: 600px;
+  height: 40px;
+  color: black;
+  border-radius: 8px;
+}
+
+h1{
+  font-size: 50px;
+  align-items: center;
+  text-align: center;
+  color: black;
+}
+
+textarea#input-saida{
+  margin-top: 5px;
+}
+
+textarea#input-saida-cesar{
+  margin-top: 5px;
+}
+
+
+button#button-limpar{
+  all: unset;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  color: black;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+button#limpar{
+  all: unset;
+  background-color: white;
+  width: 200px;
+  height: 40px;
+  color: black;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+select {
+  background-color: darkgrey;
+  border: 1px solid black;
+  font-size: 30px;
+  padding-right: 20px;
+
+}
+
+select{
+  position: relative;
+  font-family: Arial;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passinho do Romano e Base64</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="shortcut icon" type="image/x-icon" href="padlock.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Orbitron:regular,500,600,700,800,900" rel="stylesheet" />
+</head>
+
+<body>
+  <h1 class="titulo">CRIPTOGRAFIA</h1>
+
+  <main class="main">
+    <section>
+      <div class="hero">
+        <select name="" id="options" onchange="selecionarCodificacao(this)">
+          <option>Qual a codificação?</option>
+          <option value="base64">Base64</option>
+          <option value="cifracesar">Cifra de César</option>
+        </select>
+      </div>
+    </section>
+
+    <section>
+      <form action="">
+        <div class="texto-cripto" id="codebase64" style="display: none;">
+          <!-- <label for="input-texto">Digite a mensagem para ser criptografada</label> -->
+          <input class="input-entrada" type="text" name="input-texto" id="input-texto"
+            placeholder="insira o texto aqui">
+          <input type="button" id="msg-base64-crypto" value="Codificar Mensagem" style="display: none;"
+            onclick="encoderBase()">
+          <input type="button" id="msg-base64-decrypto" value="Decodificar Mensagem" style="display: none;"
+            onclick="decoderBase()">
+          <div class="btn-base64">
+            <input class="btn" type="radio" name="encriptobase" id="crypto-radio" onclick="selecionaradio(this)">
+            <label for="btn-cripto">Codificar</label>
+            <input class="btn" type="radio" name="encriptobase" id="btn-descripto" onclick="selecionaradio(this)">
+            <label for="btn-descripto">Decodificar</label>
+          </div>
+          <div class="flex-column">
+            <label id="">Mensagem criptografada:</label>
+            <textarea id="input-saida" rows="10" cols="40"></textarea>
+            <button type="button" value="copiar" id="buttonCopiarBase64" onclick="copiarBase64()">Copiar</button>
+            <button type=" button" value="limpar" id="button-limpar" onclick="limparBase64()">Limpar</button>
+          </div>
+        </div>
+
+        <div class="texto-cripto" id="cesar" style="display: none;">
+          <input class="input-entrada" type="text" name="input-texto" id="entrada-name"
+            placeholder="insira o texto aqui">
+          <input type="number" id="key-entrada" maxlength="2" max="999" min="1" placeholder="00" required>
+          <input type="button" id="msg-cesar-crypto" value="Codificar Mensagem" style="display: none;"
+            onclick="cesarEncoder()">
+          <input type="button" id="msg-cesar-decrypto" value="Decodificar Mensagem" style="display: none;"
+            onclick="cesarDecoder()">
+          <div class="btn-base64">
+            <input class="btn" type="radio" name="encriptobase" id="crypto-radio-cesar" onclick="selecionaradio(this)">
+            <label for="btn-cripto">Codificar</label>
+            <input class="btn" type="radio" name="encriptobase" id="crypto-radio-cesar" onclick="selecionaradio(this)">
+            <label for="btn-descripto">Decodificar</label>
+          </div>
+          <div class="flex-column">
+            <label id="">Mensagem criptografada:</label>
+            <textarea id="input-saida-cesar" rows="10" cols="40"></textarea>
+            <button type="button" value="copiar" id="buttonCopiar" onclick="copiar()">Copiar</button>
+            <button type="button" value="limpar" id="limpar" onclick="limparCesar()">Limpar</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
